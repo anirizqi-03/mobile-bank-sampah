@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../core/app_colors.dart';
 
-/// Banner pengingat yang sebagian tertutup kartu putih di atasnya.
-/// Konten diberi padding atas supaya tidak tertutup kartu.
+
 class ReminderBanner extends StatelessWidget {
   const ReminderBanner({super.key});
 
@@ -23,7 +22,6 @@ class ReminderBanner extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(12, 14, 14, 0),
       child: Row(
         children: [
-          // indikator halaman (vertikal)
           Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -85,7 +83,7 @@ class ReminderBanner extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           GestureDetector(
-            onTap: () {}, // TODO
+            onTap: () {},
             child: const Row(
               children: [
                 Text(
